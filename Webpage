@@ -1,0 +1,40 @@
+// Class for all photography sessions
+class PhotographySession {
+  constructor(name, duration, price, images) {
+    this.name = name;
+    this.duration = duration;
+    this.price = price;
+    this.images = images;
+  }
+
+  // Method to display session details
+  displayDetails() {
+    console.log(`${this.name} Session - $${this.price}`);
+    console.log(`Duration: ${this.duration}`);
+    console.log(`Package includes ${this.images} edited high-resolution digital images.`);
+  }
+}
+
+// Create instances for each session
+const classicPortrait = new PhotographySession('Classic Portrait', '1 hour', 250, 15);
+const newborn = new PhotographySession('Newborn', '2-3 hours', 350, 20);
+const maternity = new PhotographySession('Maternity', '1.5 hours', 300, 20);
+const engagement = new PhotographySession('Engagement', '2 hours', 400, 25);
+const headshot = new PhotographySession('Headshot', '30 minutes', 150, 5);
+const seniorPortrait = new PhotographySession('Senior Portrait', '1.5 hours', 275, 20);
+const event = new PhotographySession('Event', '3 hours', 500, 100);
+const wedding = new PhotographySession('Wedding', '8 hours', 2500, 400);
+const boudoir = new PhotographySession('Boudoir', '2 hours', 450, 20);
+const mini = new PhotographySession('Mini', '20 minutes', 100, 5);
+
+// Display session details
+classicPortrait.displayDetails();
+newborn.displayDetails();
+maternity.displayDetails();
+engagement.displayDetails();
+headshot.displayDetails();
+seniorPortrait.displayDetails();
+event.displayDetails();
+wedding.displayDetails();
+boudoir.displayDetails();
+mini.displayDetails();
